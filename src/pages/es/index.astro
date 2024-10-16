@@ -1,0 +1,13 @@
+---
+import { getRelativeLocaleUrl } from "astro:i18n";
+import Layout from "@/layouts/Layout.astro";
+
+const enIndex = getRelativeLocaleUrl("en");
+---
+
+<Layout language="es" title="Steam Review Creator (ES)">
+    <main>
+        <a href={enIndex} class="text-white">EN</a>
+        <h1 class="text-white">Creador de Reseñas de Steam</h1>
+    </main>
+</Layout>
