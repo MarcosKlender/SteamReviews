@@ -1,13 +1,17 @@
 ---
 import { getRelativeLocaleUrl } from "astro:i18n";
 import Layout from "@/layouts/Layout.astro";
+import Hero from "@/components/Hero.astro";
+import Navbar from "@/components/Navbar.astro";
 
 const enIndex = getRelativeLocaleUrl("en");
 ---
 
 <Layout language="es" title="Steam Review Creator (ES)">
-    <main>
-        <a href={enIndex} class="text-white">EN</a>
-        <h1 class="text-white">Creador de Reseñas de Steam</h1>
-    </main>
+  <Navbar url={enIndex} name="Inglés" />
+  <Hero
+    title="Creador de Reseñas de Steam"
+    text="Crea una reseña para tus juegos favoritos de Steam"
+  />
+  <main>MAIN</main>
 </Layout>
