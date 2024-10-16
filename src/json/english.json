@@ -1,0 +1,123 @@
+[
+    {
+        "title": "PC Requirements",
+        "options": [
+            "Ask NASA for a computer",
+            "Master Race",
+            "Fast",
+            "Decent",
+            "Potato",
+            "Go install Linux instead"
+        ]
+    },
+    {
+        "title": "Graphics",
+        "options": [
+            "Better than reality",
+            "Beautiful",
+            "Good",
+            "Decent",
+            "Bad",
+            "CD-i game"
+        ]
+    },
+    {
+        "title": "Gameplay",
+        "options": [
+            "Addictive",
+            "Very good",
+            "Good",
+            "It's just gameplay",
+            "Meh",
+            "Watch paint dry instead"
+        ]
+    },
+    {
+        "title": "Game Size",
+        "options": [
+            "You will need a black hole",
+            "Warzone",
+            "Big",
+            "Workable",
+            "Old Fashioned",
+            "Floppy Disk"
+        ]
+    },
+    {
+        "title": "Difficulty",
+        "options": [
+            "Another Dark Souls",
+            "Pretty hard",
+            "Significant brain usage",
+            "Easy to learn / Hard to master",
+            "A walk in the park",
+            "Just press 'W'"
+        ]
+    },
+    {
+        "title": "Story",
+        "options": [
+            "It'll replace your life",
+            "Lovely",
+            "Good",
+            "Average",
+            "Some lore",
+            "No story"
+        ]
+    },
+    {
+        "title": "Game Time",
+        "options": [
+            "To infinity and beyond",
+            "Long",
+            "Average",
+            "Short",
+            "It's over yet?"
+        ]
+    },
+    {
+        "title": "Price",
+        "options": [
+            "It's free!",
+            "Worth the price",
+            "Only on sale",
+            "Not recommended",
+            "Burn your money instead"
+        ]
+    },
+    {
+        "title": "Soundtrack",
+        "options": [
+            "Eargasm",
+            "Good",
+            "Average",
+            "Bad",
+            "Wish I'm deaf"
+        ]
+    },
+    {
+        "title": "Bugs",
+        "options": [
+            "Never heard of",
+            "Minor bugs",
+            "Can get annoying",
+            "ARK: Survival Evolved",
+            "The game itself is a big bug"
+        ]
+    },
+    {
+        "title": "Final Score",
+        "options": [
+            "1",
+            "2",
+            "3",
+            "4",
+            "5",
+            "6",
+            "7",
+            "8",
+            "9",
+            "10"
+        ]
+    }
+]

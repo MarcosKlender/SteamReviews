@@ -3,6 +3,7 @@
   "compilerOptions": {
     "baseUrl": ".",
     "paths": {
+      "@english.json": ["./src/json/english.json"],
       "@/*": ["./src/*"]
     }
   }

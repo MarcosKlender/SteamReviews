@@ -1,5 +1,7 @@
 ---
 import { getRelativeLocaleUrl } from "astro:i18n";
+import items from "@english.json";
+
 import Layout from "@/layouts/Layout.astro";
 import Hero from "@/components/Hero.astro";
 import Navbar from "@/components/Navbar.astro";
@@ -14,5 +16,33 @@ const esIndex = getRelativeLocaleUrl("es");
     title="Steam Review Creator"
     text="Create a review for your favorite Steam games"
   />
-  <main>MAIN</main>
+
+  <ul class="flex flex-wrap max-w-screen-lg py-10 mx-auto">
+    {
+      items.map((item) => {
+        return (
+          <li class="w-full p-2 md:w-1/2">
+            <fieldset class="flex flex-col py-4 border rounded">
+              <legend class="px-2 ml-4 font-bold">{item.title}</legend>
+
+              {item.options.map((option) => (
+                <label>
+                  <input
+                    type="radio"
+                    name={item.title}
+                    value={option}
+                    class="ml-4 mr-2"
+                  />
+                  {option}
+                </label>
+              ))}
+            </fieldset>
+          </li>
+        );
+      })
+    }
+    <li class="w-full p-2 my-auto text-center md:w-1/2">
+      <button class="p-2 border rounded">Copy Review</button>
+    </li>
+  </ul>
 </Layout>
