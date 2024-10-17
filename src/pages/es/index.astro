@@ -6,6 +6,7 @@ import Layout from "@/layouts/Layout.astro";
 import Hero from "@/components/Hero.astro";
 import Navbar from "@/components/Navbar.astro";
 import Review from "@/components/Review.astro";
+import Footer from "@/components/Footer.astro";
 
 const enIndex = getRelativeLocaleUrl("en");
 ---
@@ -15,7 +16,7 @@ const enIndex = getRelativeLocaleUrl("en");
 
   <Hero
     title="Creador de Reseñas de Steam"
-    text="Crea una reseña para tus juegos favoritos de Steam"
+    text="Sólo tienes que seleccionar las opciones, copiar tu reseña y pegarla donde quieras. ¡Así de fácil!"
   />
 
   <Review
@@ -25,4 +26,6 @@ const enIndex = getRelativeLocaleUrl("en");
     copiedText="¡Reseña copiada al portapapeles!"
     sourceTitle="Hecho con"
   />
+
+  <Footer text="Hecho en Ecuador por MarcosKlender" />
 </Layout>

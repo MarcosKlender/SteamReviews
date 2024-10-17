@@ -6,6 +6,7 @@ import Layout from "@/layouts/Layout.astro";
 import Hero from "@/components/Hero.astro";
 import Navbar from "@/components/Navbar.astro";
 import Review from "@/components/Review.astro";
+import Footer from "@/components/Footer.astro";
 
 const esIndex = getRelativeLocaleUrl("es");
 ---
@@ -15,7 +16,7 @@ const esIndex = getRelativeLocaleUrl("es");
 
   <Hero
     title="Steam Review Creator"
-    text="Create a review for your favorite Steam games"
+    text="Just select the options, copy your review, and paste it wherever you want. So easy!"
   />
 
   <Review
@@ -25,4 +26,6 @@ const esIndex = getRelativeLocaleUrl("es");
     copiedText="Review copied to clipboard!"
     sourceTitle="Made with"
   />
+
+  <Footer text="Made in Ecuador by MarcosKlender" />
 </Layout>

@@ -1,0 +1,13 @@
+---
+interface Props {
+    text: string;
+}
+
+const { text } = Astro.props;
+---
+
+<footer class="text-center py-2 border-t text-sm">
+    <a href="https://marcosklender.com" target="_blank" class="hover:underline"
+        >{text}</a
+    >
+</footer>

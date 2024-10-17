@@ -2,7 +2,7 @@
 const { items, buttonText, alertText, copiedText, sourceTitle } = Astro.props;
 ---
 
-<ul class="flex flex-wrap max-w-screen-lg py-10 mx-auto">
+<ul class="flex flex-wrap max-w-screen-lg pt-10 pb-20 mx-auto">
     {
         items.map((item) => {
             return (
@@ -29,7 +29,10 @@ const { items, buttonText, alertText, copiedText, sourceTitle } = Astro.props;
         })
     }
     <li class="w-full py-10 my-auto text-center md:w-1/2">
-        <button class="p-4 border rounded" id="copyReview">{buttonText}</button>
+        <button
+            class="p-4 border rounded font-bold hover:-translate-y-0.5"
+            id="copyReview">{buttonText}</button
+        >
     </li>
 </ul>
 
