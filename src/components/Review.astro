@@ -1,5 +1,5 @@
 ---
-const { items, buttonText, alertText, copiedText } = Astro.props;
+const { items, buttonText, alertText, copiedText, sourceTitle } = Astro.props;
 ---
 
 <ul class="flex flex-wrap max-w-screen-lg py-10 mx-auto">
@@ -33,7 +33,7 @@ const { items, buttonText, alertText, copiedText } = Astro.props;
     </li>
 </ul>
 
-<script define:vars={{ alertText, copiedText }}>
+<script define:vars={{ alertText, copiedText, sourceTitle }}>
     document.addEventListener("DOMContentLoaded", function () {
         const copyButton = document.getElementById("copyReview");
 
@@ -48,8 +48,8 @@ const { items, buttonText, alertText, copiedText } = Astro.props;
                     'input[type="radio"]',
                 );
                 let categoryText = `---{ ${category} }---\n`;
-
                 let hasSelection = false;
+
                 options.forEach((option) => {
                     const optionText = option.value;
                     if (option.checked) {
@@ -66,6 +66,9 @@ const { items, buttonText, alertText, copiedText } = Astro.props;
 
                 reviewText += `${categoryText}\n`;
             });
+
+            reviewText += `---{  ${sourceTitle}  }---\n`;
+            reviewText += "☑ https://MarcosKlender.github.io/SteamReviews";
 
             if (!allSelected) {
                 alert(alertText);
