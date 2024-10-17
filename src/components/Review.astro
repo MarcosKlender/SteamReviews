@@ -36,7 +36,7 @@ const { items, buttonText, alertText, copiedText, sourceTitle } = Astro.props;
     </li>
 </ul>
 
-<script define:vars={{ alertText, copiedText, sourceTitle }}>
+<script is:inline define:vars={{ alertText, copiedText, sourceTitle }}>
     document.addEventListener("DOMContentLoaded", function () {
         const copyButton = document.getElementById("copyReview");
 
