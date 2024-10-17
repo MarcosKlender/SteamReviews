@@ -1,4 +1,15 @@
 ---
+interface Props {
+    items: {
+        title: string;
+        options: string[];
+    }[];
+    buttonText: string;
+    alertText: string;
+    copiedText: string;
+    sourceTitle: string;
+}
+
 const { items, buttonText, alertText, copiedText, sourceTitle } = Astro.props;
 ---
 

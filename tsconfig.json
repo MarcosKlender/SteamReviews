@@ -1,7 +1,6 @@
 {
   "extends": "astro/tsconfigs/strict",
   "compilerOptions": {
-    "noImplicitAny": false,
     "baseUrl": ".",
     "paths": {
       "@spanish.json": ["./src/json/spanish.json"],
