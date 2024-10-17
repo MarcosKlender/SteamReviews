@@ -1,0 +1,123 @@
+[
+    {
+        "title": "Requisitos de PC",
+        "options": [
+            "Pídele una computadora a la NASA",
+            "PC de gama alta",
+            "Rápido",
+            "Decente",
+            "Patata",
+            "Mejor instala Linux"
+        ]
+    },
+    {
+        "title": "Gráficos",
+        "options": [
+            "Mejor que la realidad",
+            "Hermoso",
+            "Bueno",
+            "Decente",
+            "Malo",
+            "Juego de la CD-i"
+        ]
+    },
+    {
+        "title": "Jugabilidad",
+        "options": [
+            "Adictivo",
+            "Muy bueno",
+            "Bueno",
+            "Es solo jugar y ya",
+            "Meh",
+            "Mejor ver la pintura secarse"
+        ]
+    },
+    {
+        "title": "Tamaño del juego",
+        "options": [
+            "Necesitarás un agujero negro",
+            "Warzone",
+            "Grande",
+            "Apropiado",
+            "Antiguo",
+            "Disquete"
+        ]
+    },
+    {
+        "title": "Dificultad",
+        "options": [
+            "Otro Dark Souls",
+            "Bastante difícil",
+            "Exige un uso significativo del cerebro",
+            "Fácil de aprender / Difícil de dominar",
+            "Un paseo por el parque",
+            "Solo presiona 'W'"
+        ]
+    },
+    {
+        "title": "Historia",
+        "options": [
+            "Reemplazará tu vida",
+            "Encantadora",
+            "Buena",
+            "Promedio",
+            "Algo de lore",
+            "Sin historia"
+        ]
+    },
+    {
+        "title": "Tiempo de juego",
+        "options": [
+            "Hasta el infinito y más allá",
+            "Largo",
+            "Promedio",
+            "Corto",
+            "¿Ya se acabó?"
+        ]
+    },
+    {
+        "title": "Precio",
+        "options": [
+            "¡Es gratis!",
+            "Vale el precio",
+            "Solo en oferta",
+            "No recomendado",
+            "Mejor quema tu dinero"
+        ]
+    },
+    {
+        "title": "Banda sonora",
+        "options": [
+            "Un orgasmo para los oídos",
+            "Buena",
+            "Promedio",
+            "Mala",
+            "Desearía ser sordo"
+        ]
+    },
+    {
+        "title": "Bugs",
+        "options": [
+            "Nunca oí hablar de ellos",
+            "Bugs menores",
+            "Pueden llegar a ser molestos",
+            "ARK: Survival Evolved",
+            "El mismo juego es un gran bug"
+        ]
+    },
+    {
+        "title": "Puntuación final",
+        "options": [
+            "1",
+            "2",
+            "3",
+            "4",
+            "5",
+            "6",
+            "7",
+            "8",
+            "9",
+            "10"
+        ]
+    }
+]

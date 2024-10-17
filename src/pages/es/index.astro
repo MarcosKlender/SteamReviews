@@ -1,8 +1,11 @@
 ---
 import { getRelativeLocaleUrl } from "astro:i18n";
+import items from "@spanish.json";
+
 import Layout from "@/layouts/Layout.astro";
 import Hero from "@/components/Hero.astro";
 import Navbar from "@/components/Navbar.astro";
+import Review from "@/components/Review.astro";
 
 const enIndex = getRelativeLocaleUrl("en");
 ---
@@ -13,5 +16,12 @@ const enIndex = getRelativeLocaleUrl("en");
   <Hero
     title="Creador de Reseñas de Steam"
     text="Crea una reseña para tus juegos favoritos de Steam"
+  />
+
+  <Review
+    items={items}
+    buttonText="Copiar Reseña"
+    alertText="Por favor, selecciona una opción para cada categoría."
+    copiedText="¡Reseña copiada al portapapeles!"
   />
 </Layout>
