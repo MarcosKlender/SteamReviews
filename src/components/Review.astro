@@ -1,0 +1,85 @@
+---
+const { items, buttonText, alertText, copiedText } = Astro.props;
+---
+
+<ul class="flex flex-wrap max-w-screen-lg py-10 mx-auto">
+    {
+        items.map((item) => {
+            return (
+                <li class="w-full px-10 py-2 md:p-2 md:w-1/2">
+                    <fieldset class="flex flex-col py-4 border rounded">
+                        <legend class="px-2 ml-4 font-bold">
+                            {item.title}
+                        </legend>
+
+                        {item.options.map((option) => (
+                            <label>
+                                <input
+                                    type="radio"
+                                    name={item.title}
+                                    value={option}
+                                    class="ml-4 mr-2"
+                                />
+                                {option}
+                            </label>
+                        ))}
+                    </fieldset>
+                </li>
+            );
+        })
+    }
+    <li class="w-full py-10 my-auto text-center md:w-1/2">
+        <button class="p-4 border rounded" id="copyReview">{buttonText}</button>
+    </li>
+</ul>
+
+<script define:vars={{ alertText, copiedText }}>
+    document.addEventListener("DOMContentLoaded", function () {
+        const copyButton = document.getElementById("copyReview");
+
+        copyButton.addEventListener("click", function () {
+            const fieldsets = document.querySelectorAll("fieldset");
+            let reviewText = "";
+            let allSelected = true;
+
+            fieldsets.forEach((fieldset) => {
+                const category = fieldset.querySelector("legend").textContent;
+                const options = fieldset.querySelectorAll(
+                    'input[type="radio"]',
+                );
+                let categoryText = `---{ ${category} }---\n`;
+
+                let hasSelection = false;
+                options.forEach((option) => {
+                    const optionText = option.value;
+                    if (option.checked) {
+                        categoryText += `☑ ${optionText}\n`;
+                        hasSelection = true;
+                    } else {
+                        categoryText += `☐ ${optionText}\n`;
+                    }
+                });
+
+                if (!hasSelection) {
+                    allSelected = false;
+                }
+
+                reviewText += `${categoryText}\n`;
+            });
+
+            if (!allSelected) {
+                alert(alertText);
+                return;
+            }
+
+            navigator.clipboard
+                .writeText(reviewText)
+                .then(() => {
+                    alert(copiedText);
+                })
+                .catch((err) => {
+                    console.error("Failed to copy review: ", err);
+                });
+        });
+    });
+</script>
